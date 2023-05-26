@@ -3,7 +3,7 @@
 This module can be used as part of a terraform deployment to access OpenSearch that has been deployed as part of a cumulus stack. 
 
 Example module configuration:
-```json
+```terraform
 module "cumulus_opensearch_module"  {
   source                    = "<version_tag_url>"
   prefix                    = var.prefix
