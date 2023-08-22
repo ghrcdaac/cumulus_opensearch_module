@@ -69,7 +69,7 @@ jobs:
         - name: Build a release
           run: |
             python --version
-            python createPackage.py
+            python create_lambda_package.py
             bash create_release.sh $SOURCE_TAG
           env:
             SOURCE_TAG: ${{ steps.tag_name.outputs.SOURCE_TAG }}
