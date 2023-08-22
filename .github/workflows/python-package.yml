@@ -21,8 +21,16 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
+          if [ -f requirements.txt ];
+          then
+            echo "Installing requirements..."
+            pip install -r requirements.txt;
+          fi
+          if [ -f requirements-dev.txt ];
+            then
+            echo "Installing dev requirements..."
+            pip install -r requirements-dev.txt;
+          fi
       - name: Lint with flake8
         run: |
           # stop the build if there are Python syntax errors or undefined names
