@@ -12,7 +12,7 @@ print(f'Installing package requirements...')
 # Install requirements
 os.makedirs(temp_dir, exist_ok=True)
 subprocess.check_call([sys.executable, '-m', 'pip', 'install',
-                       '-r', f'{task_dir}/requirements.txt', '--target', temp_dir,
+                       '-r', 'requirements.txt', '--target', temp_dir,
                        '--force-reinstall'], stdout=sys.__stdout__)
 print('Installation complete...')
 
