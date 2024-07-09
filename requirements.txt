@@ -1,2 +1,2 @@
-cumulus-message-adapter-python==2.1.0
-requests==2.27.1
+cumulus-message-adapter-python==2.2.0
+requests==2.32.3
