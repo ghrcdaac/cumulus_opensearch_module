@@ -11,7 +11,7 @@ resource "aws_lambda_function" "open_search" {
   role          = var.cumulus_lambda_role_arn
   filename      = "${path.module}/opensearch_package.zip"
   layers        = var.layers
-  runtime       = "python3.8"
+  runtime       = "python3.10"
   timeout       = 120
   # 2 minutes
   memory_size = 4096
